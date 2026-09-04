@@ -20,14 +20,13 @@ The study integrates survey-weighted statistical modeling, machine learning clas
 * **Robustness & Sensitivity Analysis:** Conducts extensive model stability checks, threshold optimization, weight perturbation, and subsample sensitivity analyses to evaluate predictive robustness and prevent overfitting.
 
 ---
-
 ## Repository Structure
 
 ```text
 cesarean-delivery-healthcare-bd/
 │
 ├── data/
-│   └── README.md              # Instructions for obtaining BDHS 2022 data
+│   └── README.md               # Instructions for obtaining BDHS 2022 data
 │
 ├── notebooks/
 │   ├── 01_data_preprocessing.ipynb
@@ -45,16 +44,20 @@ cesarean-delivery-healthcare-bd/
 │   └── robustness.py          # Model stability & sensitivity evaluation
 │
 ├── results/
-│   ├── figures/               # High-resolution ROC, SHAP, Causal & Robustness plots
-│   └── tables/                # Summary tables & evaluation metrics (.csv/.tex)
+│   ├── figures/                # High-resolution ROC, SHAP, Causal & Robustness plots
+│   └── tables/                 # Summary tables & evaluation metrics (.csv/.tex)
 │
 ├── paper/
-│   └── README.md              # Publication details & citation guidelines
+│   └── README.md               # Publication details & citation guidelines
 │
 ├── README.md                  # Main project documentation
 ├── requirements.txt           # Python dependencies
 ├── LICENSE                    # MIT License
 └── .gitignore                 # Excluded files (data files, raw inputs)
+```
+## Methodology Workflow
+
+```text
 [BDHS 2022 Data] ──► [Survey Weight Adjustment & Preprocessing]
                                    │
                                    ├──► [Survey-Weighted Statistical Modeling]
